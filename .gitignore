@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+fm_reasoning/
+.env/
+.venv/
+
+# Data (VERY IMPORTANT)
+data/
+datasets/
+*.npz
+*.npy
+
+# Checkpoints & logs
+checkpoints/
+outputs/
+wandb/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

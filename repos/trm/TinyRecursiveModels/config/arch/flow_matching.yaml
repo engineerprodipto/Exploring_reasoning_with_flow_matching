@@ -1,0 +1,18 @@
+name: flow_matching@DiscreteFlowMatchingModel
+loss:
+  name: losses@DiscreteFlowMatchingLossHead
+  loss_function: generalized_kl
+  source_distribution: uniform
+  scheduler_type: polynomial
+  scheduler_exponent: 2.0
+  time_epsilon: 1e-3
+
+hidden_size: 512
+num_layers: 6
+num_heads: 8
+expansion: 4
+
+puzzle_emb_ndim: ${.hidden_size}
+pos_encodings: rope
+forward_dtype: bfloat16
+time_emb_dim: 256
